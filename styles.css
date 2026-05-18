@@ -183,3 +183,23 @@ footer{
   }
 
 }
+
+.tabla{
+  display:none;
+}
+
+.visible{
+  display:block;
+}
+
+.contenedor-tablas{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.flecha{
+  font-size:30px;
+  padding:10px 20px;
+  cursor:pointer;
+}
