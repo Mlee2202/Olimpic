@@ -5,33 +5,33 @@ document.querySelectorAll(".tabla");
 
 function mostrarTabla(){
 
-  tablas.forEach(tabla => {
-    tabla.classList.remove("visible");
-  });
+    tablas.forEach(tabla => {
+        tabla.classList.remove("visible");
+    });
 
-  tablas[indice].classList.add("visible");
+    tablas[indice].classList.add("visible");
 }
 
 function siguiente(){
 
-  indice++;
+    indice++;
 
-  if(indice >= tablas.length){
-    indice = 0;
-  }
+    if(indice >= tablas.length){
+        indice = 0;
+    }
 
-  mostrarTabla();
+    mostrarTabla();
 }
 
 function anterior(){
 
-  indice--;
+    indice--;
 
-  if(indice < 0){
-    indice = tablas.length - 1;
-  }
+    if(indice < 0){
+        indice = tablas.length - 1;
+    }
 
-  mostrarTabla();
+    mostrarTabla();
 }
 
 mostrarTabla();
